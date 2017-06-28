@@ -53,8 +53,11 @@ class Tree {
      */
     public function __construct(array $ArrayToMenu = array())
     {
+        $this->config();
+    }
 
-        $this->tree = 1;
+    public function config(){
+        $this->config = include VENDOR_DIR.DIRECTORY_SEPARATOR.'mader12/treemenu/config/config.treemenu.sample.php';
     }
 
 }
