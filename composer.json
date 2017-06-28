@@ -14,7 +14,7 @@
         }
     ],
     "autoload": {
-        "psr-0": { "Tree": ".", "config": "." }
+        "psr-0": { "Tree": ".", "config": ".", "template": "." }
     },
     "scripts": {
         "post-package-install":[

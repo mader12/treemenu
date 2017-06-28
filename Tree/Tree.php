@@ -9,7 +9,7 @@ namespace Tree;
 class Tree {
     public $tree;
     public $config;
-    
+    public $template = 'main';
     /**
      * Register Slim's PSR-0 autoloader
      */
@@ -70,6 +70,12 @@ class Tree {
         define('VENDOR_DIR', realpath(dirname(__DIR__)).DIRECTORY_SEPARATOR.'vendor');
     }
 
+    public function render(){
+        include VENDOR_DIR.DIRECTORY_SEPARATOR.'mader12'.
+            DIRECTORY_SEPARATOR.'treemenu'.
+            DIRECTORY_SEPARATOR.'template'.
+            DIRECTORY_SEPARATOR.$this->template.'.php';
+    }
     
 
 }
