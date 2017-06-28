@@ -7,6 +7,7 @@
     "homepage": "http://github.com/mader12/treemenu",
     "license": "GPL 3",
     "minimum-stability":"dev",
+    "prefer-stable": true,  
     "authors": [
         {
             "name": "Mike Drozhzhinov",
