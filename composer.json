@@ -14,8 +14,6 @@
         }
     ],
     "autoload": {
-        "psr-4": {
-            "mader\\Package\\": "src/"
-        }
+        "psr-0": { "Tree": "." }
     }
 }
