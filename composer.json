@@ -14,7 +14,7 @@
         }
     ],
     "autoload": {
-        "psr-0": { "Tree": "." }
+        "psr-0": { "Tree": ".", "config":"." }
     },
     "scripts": {
        "post-create-project-cmd": [
