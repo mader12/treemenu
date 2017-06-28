@@ -17,7 +17,7 @@
         "psr-0": { "Tree": ".", "config": "." }
     },
     "scripts": {
-       "post-create-project-cmd": [
+       "post-package-update": [
             "php -r \"copy('config/config.treemenu.sample.php', 'config/local.php');\""
         ]
     }
