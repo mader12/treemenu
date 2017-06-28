@@ -7,6 +7,8 @@
 namespace Tree;
 
 class Tree {
+    public $tree;
+    public $config;
     
     /**
      * Register Slim's PSR-0 autoloader
@@ -47,12 +49,12 @@ class Tree {
 
     /**
      * Constructor
-     * @param  array $userSettings Associative array of application settings
+     * @param  array $ArrayToMenu Associative array of application settings
      */
-    public function __construct(array $userSettings = array())
+    public function __construct(array $ArrayToMenu = array())
     {
 
-        return 1;
+        $this->tree = 1;
     }
 
 }
