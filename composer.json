@@ -17,8 +17,8 @@
         "psr-0": { "Tree": ".", "config": "." }
     },
     "scripts": {
-       "post-package-update": [
-            "php -r \"copy('config/config.treemenu.sample.php', 'config/local.php');\""
+        "post-package-install":[
+             "php -r \"copy('config/config.treemenu.sample.php', 'config/local.php');\""
         ]
     }
 }
