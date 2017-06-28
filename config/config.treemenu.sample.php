@@ -1,5 +1,9 @@
 <?php
 return [
-    "test" => "test",
+    'ajax' => [
+        'get' => '',
+        'post' => '',
+        'firstdata' => ''
+    ]
 ];
 

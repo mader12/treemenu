@@ -53,11 +53,23 @@ class Tree {
      */
     public function __construct(array $ArrayToMenu = array())
     {
+        if (!empty($ArrayToMenu) && is_array($ArrayToMenu)) {
+            $this->tree = $ArrayToMenu;
+        }
         $this->config();
     }
 
     public function config(){
+        if (!defined('VENDOR_DIR')){
+            $this->definedIt();
+        }
         $this->config = include VENDOR_DIR.DIRECTORY_SEPARATOR.'mader12/treemenu/config/config.treemenu.sample.php';
     }
+
+    public function defineIt(){
+        define('VENDOR_DIR', realpath(dirname(__DIR__)).DIRECTORY_SEPARATOR.'vendor');
+    }
+
+    
 
 }
