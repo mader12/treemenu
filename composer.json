@@ -1,6 +1,7 @@
 {
     "name": "mader12/treemenu",
     "type": "widget",
+    "version": "3.1.7",
     "description": "PHP treemenu",
     "keywords": ["tree menu","tree","menu"],
     "homepage": "http://github.com/mader12/treemenu",
