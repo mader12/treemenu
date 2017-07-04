@@ -7,6 +7,7 @@
 namespace Tree;
 
 class Tree {
+    public $configName;
     public $tree;
     public $config;
     public $template = 'main';
@@ -49,14 +50,16 @@ class Tree {
 
     /**
      * Constructor
+     * @param  string $jsonParamToajax data params to sent ajax
      * @param  array $ArrayToMenu Associative array of application settings
      */
-    public function __construct(array $ArrayToMenu = array())
+    public function __construct( $configName = '', array $ArrayToMenu = array())
     {
         if (!empty($ArrayToMenu) && is_array($ArrayToMenu)) {
             $this->tree = $ArrayToMenu;
         }
         $this->config();
+        $this->configName = $configName;
     }
 
     public function config(){
@@ -64,6 +67,26 @@ class Tree {
             $this->definedIt();
         }
         $this->config = include VENDOR_DIR.DIRECTORY_SEPARATOR.'mader12/treemenu/config/config.treemenu.sample.php';
+    }
+
+    public function getHeader(){
+        return $this->config['ajaxdata'][$this->configName]['header'];
+    }
+
+    public function getUniqFirstId(){
+        return '"'.$this->config['ajaxdata'][$this->configName]['uniqFirstId'].'"';
+    }
+
+    public function getCss($quotes = ''){
+        return $quotes.$this->config['ajaxdata'][$this->configName]['css'].$quotes;
+    }
+
+    public function getUniqFirstIdUl($quotes = ''){
+        return $quotes.$this->config['ajaxdata'][$this->configName]['uniqFirstIdUl'].$quotes;
+    }
+    
+    public function getAjaxUrl(){
+        return '"'.$this->config['ajaxdata'][$this->configName]['url'].'"';
     }
 
     public function defineIt(){
