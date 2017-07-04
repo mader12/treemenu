@@ -1,3 +1,3 @@
 # treemenu
-# Config file - config/config.treemenu.sample.php
-# 
+ Config file - config/config.treemenu.sample.php
+ 
