@@ -8,6 +8,7 @@ namespace Tree;
 
 class Tree {
     public $configName;
+    public $first = 0;
     public $tree;
     public $config;
     public $template = 'main';

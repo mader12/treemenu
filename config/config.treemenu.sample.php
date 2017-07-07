@@ -17,6 +17,21 @@ return [
                     font-size: 15px;
                     margin-top: 5px;
                     text-align:left;'
+        ],
+        'getIstToIndex' => [
+            'header' => 'Источники информации',
+            'get' => true,
+            'post' => false,
+            'firstdata' => '',
+            'url' => '/home/get-tree-ist',
+            'uniqFirstId' => 'id-tree-ist_0',
+            'uniqFirstIdUl' => 'ist-ul_0',
+            'css' => 'height: 300px;
+                    overflow: auto;
+                    overflow-y: overlay;
+                    font-size: 15px;
+                    margin-top: 5px;
+                    text-align:left;'
         ]
     ]
 ];
