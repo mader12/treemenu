@@ -9,10 +9,11 @@ Add to composer.json
 then make
 <b>composer update </b>
 
-#Config
+# Config
 Config file - config/config.treemenu.sample.php
 
-#used
+# used
+
 in comtroller action
 <b>$tree = new \Tree\Tree('nameConfigAjaxName');</b>
 
